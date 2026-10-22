@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="book_clean_code" model="library.book">
+        <field name="name">Clean Code</field>
+        <field name="author">Robert C. Martin</field>
+        <field name="isbn">9780132350884</field>
+        <field name="publish_year">2008</field>
+    </record>
+    <record id="book_pragmatic_programmer" model="library.book">
+        <field name="name">The Pragmatic Programmer</field>
+        <field name="author">David Thomas</field>
+        <field name="isbn">9780135957059</field>
+        <field name="publish_year">2019</field>
+    </record>
+    <record id="book_dune" model="library.book">
+        <field name="name">Dune</field>
+        <field name="author">Frank Herbert</field>
+        <field name="isbn">9780441172719</field>
+        <field name="publish_year">1965</field>
+    </record>
+    <record id="book_the_hobbit" model="library.book">
+        <field name="name">The Hobbit</field>
+        <field name="author">J. R. R. Tolkien</field>
+        <field name="isbn">9780547928227</field>
+        <field name="publish_year">1937</field>
+    </record>
+
+    <record id="copy_clean_code_001" model="library.copy">
+        <field name="book_id" ref="book_clean_code"/>
+        <field name="inventory_number">CC-001</field>
+        <field name="condition">good</field>
+    </record>
+    <record id="copy_clean_code_002" model="library.copy">
+        <field name="book_id" ref="book_clean_code"/>
+        <field name="inventory_number">CC-002</field>
+        <field name="condition">new</field>
+    </record>
+    <record id="copy_pragmatic_001" model="library.copy">
+        <field name="book_id" ref="book_pragmatic_programmer"/>
+        <field name="inventory_number">PP-001</field>
+        <field name="condition">good</field>
+    </record>
+    <record id="copy_dune_001" model="library.copy">
+        <field name="book_id" ref="book_dune"/>
+        <field name="inventory_number">DU-001</field>
+        <field name="condition">damaged</field>
+    </record>
+    <record id="copy_hobbit_001" model="library.copy">
+        <field name="book_id" ref="book_the_hobbit"/>
+        <field name="inventory_number">HB-001</field>
+        <field name="condition">good</field>
+    </record>
+
+    <record id="member_olena" model="library.member">
+        <field name="name">Olena Kovalenko</field>
+        <field name="membership_number">M-1001</field>
+    </record>
+    <record id="member_andrii" model="library.member">
+        <field name="name">Andrii Shevchenko</field>
+        <field name="membership_number">M-1002</field>
+    </record>
+    <record id="member_maria" model="library.member">
+        <field name="name">Maria Bondar</field>
+        <field name="membership_number">M-1003</field>
+    </record>
+
+    <record id="loan_clean_code_overdue" model="library.loan">
+        <field name="copy_id" ref="copy_clean_code_001"/>
+        <field name="member_id" ref="member_olena"/>
+        <field name="loan_date" eval="DateTime.today() - relativedelta(days=28)"/>
+        <field name="due_date" eval="DateTime.today() - relativedelta(days=14)"/>
+        <field name="state">active</field>
+    </record>
+    <record id="loan_pragmatic_active" model="library.loan">
+        <field name="copy_id" ref="copy_pragmatic_001"/>
+        <field name="member_id" ref="member_andrii"/>
+        <field name="loan_date" eval="DateTime.today() - relativedelta(days=3)"/>
+        <field name="due_date" eval="DateTime.today() + relativedelta(days=11)"/>
+        <field name="state">active</field>
+    </record>
+    <record id="loan_dune_returned" model="library.loan">
+        <field name="copy_id" ref="copy_dune_001"/>
+        <field name="member_id" ref="member_maria"/>
+        <field name="loan_date" eval="DateTime.today() - relativedelta(days=20)"/>
+        <field name="due_date" eval="DateTime.today() - relativedelta(days=6)"/>
+        <field name="return_date" eval="DateTime.today() - relativedelta(days=7)"/>
+        <field name="state">returned</field>
+    </record>
+</odoo>
