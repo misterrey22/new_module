@@ -6615,3 +6615,1246 @@ Stack (most recent call last):
 2026-11-20 15:47:47,576 6600 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 15:47:47] "POST /web/dataset/call_kw/library.loan/onchange#library.loan.onchange HTTP/1.1" 200 - 1 0.001 0.002
 2026-11-20 15:47:50,448 6600 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 15:47:50] "POST /web/dataset/call_kw/library.loan/onchange#library.loan.onchange HTTP/1.1" 200 - 1 0.002 0.001
 2026-11-20 15:47:55,936 6600 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 15:47:55] "POST /web/dataset/call_kw/library.loan/web_search_read#library.loan.web_search_read HTTP/1.1" 200 - 5 0.002 0.002
+2026-11-20 15:56:05,834 6600 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 15:56:05] "POST /web/dataset/call_kw/res.users/action_get#res.users.action_get HTTP/1.1" 200 - 11 0.004 0.006
+2026-11-20 15:56:05,870 6600 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 15:56:05] "POST /web/dataset/call_kw/res.users/get_views#res.users.get_views HTTP/1.1" 200 - 38 0.015 0.013
+2026-11-20 15:56:05,890 6600 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 15:56:05] "POST /web/dataset/call_kw/res.users/web_read#res.users.web_read HTTP/1.1" 200 - 18 0.009 0.003
+2026-11-20 15:56:05,946 6600 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 15:56:05] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 200 - 8 0.001 0.005
+2026-11-20 16:03:36,392 6600 INFO ? odoo.service.server: Initiating shutdown 
+2026-11-20 16:03:36,392 6600 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2026-11-20 16:03:36,640 6600 INFO ? odoo.service.server: cron0 max age (0s) reached, releasing connection. 
+2026-11-20 16:03:36,640 6600 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 4 connections  
+2026-11-20 16:03:38,911 3912 INFO ? odoo: Odoo version 19.0-20261022 
+2026-11-20 16:03:38,911 3912 INFO ? odoo: Using configuration file at d:\odoo\server\odoo.conf 
+2026-11-20 16:03:38,911 3912 INFO ? odoo: addons paths: _NamespacePath(['D:\\Odoo\\server\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\19.0', 'd:\\odoo\\server\\odoo\\addons', 'd:\\odoo\\server\\custom_addons', 'd:\\odoo\\server\\addons']) 
+2026-11-20 16:03:38,911 3912 INFO ? odoo: database: odoo@localhost:5432 
+2026-11-20 16:03:39,214 3912 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-E7061TN:8069 
+2026-11-20 16:03:42,239 24220 INFO ? odoo.modules.loading: loading 1 modules... 
+2026-11-20 16:03:42,242 24220 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-11-20 16:03:42,245 24220 INFO ? odoo.modules.loading: loading 15 modules... 
+2026-11-20 16:03:42,276 24220 WARNING ? odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000002315D2BF280, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 20, code LibraryMember> 
+Stack (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1009, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "D:\Odoo\server\odoo\service\server.py", line 132, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "D:\Odoo\server\.venv\Lib\site-packages\werkzeug\serving.py", line 390, in handle
+    super().handle()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "D:\Odoo\server\.venv\Lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "D:\Odoo\server\.venv\Lib\site-packages\werkzeug\serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "D:\Odoo\server\odoo\http.py", line 2852, in __call__
+    response = request._serve_db()
+  File "D:\Odoo\server\odoo\http.py", line 2275, in _serve_db
+    registry = Registry(self.db)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 20, in LibraryMember
+    _("Membership number must be unique."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:03:42,276 24220 WARNING ? odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000002315D2BF280, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 24, code LibraryMember> 
+Stack (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1009, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "D:\Odoo\server\odoo\service\server.py", line 132, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "D:\Odoo\server\.venv\Lib\site-packages\werkzeug\serving.py", line 390, in handle
+    super().handle()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "D:\Odoo\server\.venv\Lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "D:\Odoo\server\.venv\Lib\site-packages\werkzeug\serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "D:\Odoo\server\odoo\http.py", line 2852, in __call__
+    response = request._serve_db()
+  File "D:\Odoo\server\odoo\http.py", line 2275, in _serve_db
+    registry = Registry(self.db)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 24, in LibraryMember
+    _("One user can be linked to only one library member."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:03:42,474 24220 INFO ? odoo.modules.loading: 15 modules loaded in 0.23s, 0 queries (+0 extra) 
+2026-11-20 16:03:42,495 24220 INFO ? odoo.modules.loading: Modules loaded. 
+2026-11-20 16:03:42,504 24220 INFO ? odoo.registry: Registry loaded in 0.272s 
+2026-11-20 16:03:42,504 24220 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-11-20 16:03:42,728 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:42] "GET /odoo/action-93 HTTP/1.1" 200 - 85 0.025 0.473
+2026-11-20 16:03:42,774 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:42] "GET /web/webclient/load_menus HTTP/1.1" 200 - 12 0.003 0.006
+2026-11-20 16:03:43,188 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:43] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 15 0.018 0.210
+2026-11-20 16:03:43,188 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:43] "POST /web/dataset/call_kw/library.loan/get_views#library.loan.get_views HTTP/1.1" 200 - 24 0.035 0.194
+2026-11-20 16:03:43,220 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:43] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 4 0.075 0.184
+2026-11-20 16:03:43,222 24220 ERROR odoo odoo.sql_db: bad query: b'SELECT "library_member"."id", "library_member"."name", "library_member"."membership_number", "library_member"."user_id", "library_member"."create_uid", "library_member"."create_date", "library_member"."write_uid", "library_member"."write_date" FROM "library_member" WHERE "library_member"."id" IN (1)'
+ERROR: ОШИБКА:  столбец library_member.user_id не существует
+LINE 1: ...er"."name", "library_member"."membership_number", "library_m...
+                                                             ^
+ 
+2026-11-20 16:03:43,241 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:43] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.012
+2026-11-20 16:03:43,262 24220 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "D:\Odoo\server\odoo\http.py", line 2852, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 2331, in _serve_db
+    raise self._update_served_exception(exc)
+  File "D:\Odoo\server\odoo\http.py", line 2329, in _serve_db
+    return service_model.retrying(serve_func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\service\model.py", line 188, in retrying
+    result = func()
+             ^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 2379, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 2594, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\base\models\ir_http.py", line 353, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 838, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\web\controllers\dataset.py", line 32, in call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\service\model.py", line 97, in call_kw
+    result = method(recs, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\web\models\models.py", line 68, in web_search_read
+    values_records = records.web_read(specification)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\web\models\models.py", line 154, in web_read
+    many2one_data[rec.id]['display_name'] = rec.display_name
+                                            ^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "D:\Odoo\server\odoo\orm\fields.py", line 1916, in compute_value
+    records._compute_field_value(self)
+  File "D:\Odoo\server\odoo\orm\models.py", line 4961, in _compute_field_value
+    determine(field.compute, self)
+  File "D:\Odoo\server\odoo\orm\fields.py", line 81, in determine
+    return needle(*args)
+           ^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\models.py", line 1449, in _compute_display_name
+    record.display_name = convert(record[self._rec_name], record)
+                                  ~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\models.py", line 6707, in __getitem__
+    return self._fields[key].__get__(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\fields.py", line 1701, in __get__
+    recs._fetch_field(self)
+  File "D:\Odoo\server\odoo\orm\models.py", line 3778, in _fetch_field
+    self.fetch(fnames)
+  File "D:\Odoo\server\odoo\orm\models.py", line 3818, in fetch
+    fetched = self._fetch_query(query, fields_to_fetch)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\models.py", line 3923, in _fetch_query
+    rows = self.env.execute_query(query.select(*sql_terms))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\environments.py", line 534, in execute_query
+    self.cr.execute(query)
+  File "D:\Odoo\server\odoo\sql_db.py", line 440, in execute
+    self._obj.execute(query, params)
+psycopg2.errors.UndefinedColumn: ОШИБКА:  столбец library_member.user_id не существует
+LINE 1: ...er"."name", "library_member"."membership_number", "library_m...
+                                                             ^
+
+2026-11-20 16:03:43,268 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:43] "POST /web/dataset/call_kw/library.loan/web_search_read#library.loan.web_search_read HTTP/1.1" 200 - 5 0.051 0.256
+2026-11-20 16:03:43,342 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:43] "GET /web/webclient/translations?hash=2b6b5e856eafa8f36a62db36518c37552f19d65b&lang=uk_UA HTTP/1.1" 200 - 2 0.001 0.423
+2026-11-20 16:03:43,571 24220 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-11-20 16:03:43,736 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:43] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.002 0.000
+2026-11-20 16:03:45,684 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:45] "GET /odoo/action-93 HTTP/1.1" 200 - 9 0.000 0.008
+2026-11-20 16:03:45,712 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:45] "GET /web/webclient/load_menus HTTP/1.1" 200 - 1 0.000 0.003
+2026-11-20 16:03:45,898 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:45] "POST /web/dataset/call_kw/library.loan/get_views#library.loan.get_views HTTP/1.1" 200 - 2 0.003 0.007
+2026-11-20 16:03:45,900 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:45] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.006 0.006
+2026-11-20 16:03:45,900 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:45] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.003 0.007
+2026-11-20 16:03:45,902 24220 ERROR odoo odoo.sql_db: bad query: b'SELECT "library_member"."id", "library_member"."name", "library_member"."membership_number", "library_member"."user_id", "library_member"."create_uid", "library_member"."create_date", "library_member"."write_uid", "library_member"."write_date" FROM "library_member" WHERE "library_member"."id" IN (1)'
+ERROR: ОШИБКА:  столбец library_member.user_id не существует
+LINE 1: ...er"."name", "library_member"."membership_number", "library_m...
+                                                             ^
+ 
+2026-11-20 16:03:45,904 24220 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "D:\Odoo\server\odoo\http.py", line 2852, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 2331, in _serve_db
+    raise self._update_served_exception(exc)
+  File "D:\Odoo\server\odoo\http.py", line 2329, in _serve_db
+    return service_model.retrying(serve_func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\service\model.py", line 188, in retrying
+    result = func()
+             ^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 2379, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 2594, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\base\models\ir_http.py", line 353, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 838, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\web\controllers\dataset.py", line 32, in call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\service\model.py", line 97, in call_kw
+    result = method(recs, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\web\models\models.py", line 68, in web_search_read
+    values_records = records.web_read(specification)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\web\models\models.py", line 154, in web_read
+    many2one_data[rec.id]['display_name'] = rec.display_name
+                                            ^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "D:\Odoo\server\odoo\orm\fields.py", line 1916, in compute_value
+    records._compute_field_value(self)
+  File "D:\Odoo\server\odoo\orm\models.py", line 4961, in _compute_field_value
+    determine(field.compute, self)
+  File "D:\Odoo\server\odoo\orm\fields.py", line 81, in determine
+    return needle(*args)
+           ^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\models.py", line 1449, in _compute_display_name
+    record.display_name = convert(record[self._rec_name], record)
+                                  ~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\models.py", line 6707, in __getitem__
+    return self._fields[key].__get__(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\fields.py", line 1701, in __get__
+    recs._fetch_field(self)
+  File "D:\Odoo\server\odoo\orm\models.py", line 3778, in _fetch_field
+    self.fetch(fnames)
+  File "D:\Odoo\server\odoo\orm\models.py", line 3818, in fetch
+    fetched = self._fetch_query(query, fields_to_fetch)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\models.py", line 3923, in _fetch_query
+    rows = self.env.execute_query(query.select(*sql_terms))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\environments.py", line 534, in execute_query
+    self.cr.execute(query)
+  File "D:\Odoo\server\odoo\sql_db.py", line 440, in execute
+    self._obj.execute(query, params)
+psycopg2.errors.UndefinedColumn: ОШИБКА:  столбец library_member.user_id не существует
+LINE 1: ...er"."name", "library_member"."membership_number", "library_m...
+                                                             ^
+
+2026-11-20 16:03:45,905 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:45] "POST /web/dataset/call_kw/library.loan/web_search_read#library.loan.web_search_read HTTP/1.1" 200 - 4 0.003 0.011
+2026-11-20 16:03:45,943 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:45] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.002
+2026-11-20 16:03:46,692 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:46] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2026-11-20 16:03:48,669 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:48] "POST /web/action/load HTTP/1.1" 200 - 9 0.004 0.004
+2026-11-20 16:03:48,688 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:48] "POST /web/dataset/call_kw/library.book/get_views#library.book.get_views HTTP/1.1" 200 - 22 0.007 0.010
+2026-11-20 16:03:48,694 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:48] "POST /web/dataset/call_kw/library.book/web_search_read#library.book.web_search_read HTTP/1.1" 200 - 3 0.001 0.002
+2026-11-20 16:03:49,248 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:49] "POST /web/dataset/call_kw/library.book/web_search_read#library.book.web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2026-11-20 16:03:49,776 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:49] "POST /web/dataset/call_kw/library.book/web_search_read#library.book.web_search_read HTTP/1.1" 200 - 2 0.000 0.003
+2026-11-20 16:03:50,465 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:50] "POST /web/action/load HTTP/1.1" 200 - 9 0.004 0.003
+2026-11-20 16:03:50,471 24220 ERROR odoo odoo.sql_db: bad query: b'SELECT "library_member"."id", "library_member"."name", "library_member"."membership_number", "library_member"."user_id", "library_member"."create_uid", "library_member"."create_date", "library_member"."write_uid", "library_member"."write_date" FROM "library_member" WHERE "library_member"."id" IN (1)'
+ERROR: ОШИБКА:  столбец library_member.user_id не существует
+LINE 1: ...er"."name", "library_member"."membership_number", "library_m...
+                                                             ^
+ 
+2026-11-20 16:03:50,474 24220 ERROR odoo odoo.http: Exception during request handling. 
+Traceback (most recent call last):
+  File "D:\Odoo\server\odoo\http.py", line 2852, in __call__
+    response = request._serve_db()
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 2331, in _serve_db
+    raise self._update_served_exception(exc)
+  File "D:\Odoo\server\odoo\http.py", line 2329, in _serve_db
+    return service_model.retrying(serve_func, env=self.env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\service\model.py", line 188, in retrying
+    result = func()
+             ^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 2379, in _serve_ir_http
+    response = self.dispatcher.dispatch(rule.endpoint, args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 2594, in dispatch
+    result = self.request.registry['ir.http']._dispatch(endpoint)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\base\models\ir_http.py", line 353, in _dispatch
+    result = endpoint(**request.params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\http.py", line 838, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\web\controllers\dataset.py", line 32, in call_kw
+    return call_kw(request.env[model], method, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\service\model.py", line 97, in call_kw
+    result = method(recs, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\web\models\models.py", line 68, in web_search_read
+    values_records = records.web_read(specification)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\addons\web\models\models.py", line 154, in web_read
+    many2one_data[rec.id]['display_name'] = rec.display_name
+                                            ^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\fields.py", line 1745, in __get__
+    self.compute_value(recs)
+  File "D:\Odoo\server\odoo\orm\fields.py", line 1916, in compute_value
+    records._compute_field_value(self)
+  File "D:\Odoo\server\odoo\orm\models.py", line 4961, in _compute_field_value
+    determine(field.compute, self)
+  File "D:\Odoo\server\odoo\orm\fields.py", line 81, in determine
+    return needle(*args)
+           ^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\models.py", line 1449, in _compute_display_name
+    record.display_name = convert(record[self._rec_name], record)
+                                  ~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\models.py", line 6707, in __getitem__
+    return self._fields[key].__get__(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\fields.py", line 1701, in __get__
+    recs._fetch_field(self)
+  File "D:\Odoo\server\odoo\orm\models.py", line 3778, in _fetch_field
+    self.fetch(fnames)
+  File "D:\Odoo\server\odoo\orm\models.py", line 3818, in fetch
+    fetched = self._fetch_query(query, fields_to_fetch)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\models.py", line 3923, in _fetch_query
+    rows = self.env.execute_query(query.select(*sql_terms))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Odoo\server\odoo\orm\environments.py", line 534, in execute_query
+    self.cr.execute(query)
+  File "D:\Odoo\server\odoo\sql_db.py", line 440, in execute
+    self._obj.execute(query, params)
+psycopg2.errors.UndefinedColumn: ОШИБКА:  столбец library_member.user_id не существует
+LINE 1: ...er"."name", "library_member"."membership_number", "library_m...
+                                                             ^
+
+2026-11-20 16:03:50,475 24220 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:03:50] "POST /web/dataset/call_kw/library.loan/web_search_read#library.loan.web_search_read HTTP/1.1" 200 - 4 0.003 0.005
+2026-11-20 16:08:28,585 24652 INFO ? odoo: Odoo version 19.0-20261022 
+2026-11-20 16:08:28,586 24652 INFO ? odoo: Using configuration file at d:\odoo\server\odoo.conf 
+2026-11-20 16:08:28,586 24652 INFO ? odoo: addons paths: _NamespacePath(['D:\\Odoo\\server\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\19.0', 'd:\\odoo\\server\\odoo\\addons', 'd:\\odoo\\server\\custom_addons', 'd:\\odoo\\server\\addons']) 
+2026-11-20 16:08:28,586 24652 INFO ? odoo: database: odoo@localhost:5432 
+2026-11-20 16:08:28,920 24652 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-E7061TN:8069 
+2026-11-20 16:08:32,172 3912 INFO ? odoo.modules.loading: loading 1 modules... 
+2026-11-20 16:08:32,174 3912 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-11-20 16:08:32,178 3912 INFO ? odoo.modules.loading: loading 15 modules... 
+2026-11-20 16:08:32,183 3912 WARNING ? odoo.tools.translate: no translation language detected, skipping translation <frame at 0x0000015BA4C4FDC0, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 20, code LibraryMember> 
+Stack (most recent call last):
+  File "D:\Odoo\python\Lib\threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "D:\Odoo\python\Lib\threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "D:\Odoo\python\Lib\threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Odoo\python\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "D:\Odoo\python\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "D:\Odoo\server\odoo\service\server.py", line 132, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Odoo\python\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 390, in handle
+    super().handle()
+  File "D:\Odoo\python\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "D:\Odoo\python\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "D:\Odoo\server\odoo\http.py", line 2852, in __call__
+    response = request._serve_db()
+  File "D:\Odoo\server\odoo\http.py", line 2275, in _serve_db
+    registry = Registry(self.db)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1415, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1415, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 20, in LibraryMember
+    _("Membership number must be unique."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:08:32,184 3912 WARNING ? odoo.tools.translate: no translation language detected, skipping translation <frame at 0x0000015BA4C4FDC0, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 24, code LibraryMember> 
+Stack (most recent call last):
+  File "D:\Odoo\python\Lib\threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "D:\Odoo\python\Lib\threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "D:\Odoo\python\Lib\threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Odoo\python\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "D:\Odoo\python\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "D:\Odoo\server\odoo\service\server.py", line 132, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Odoo\python\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 390, in handle
+    super().handle()
+  File "D:\Odoo\python\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "D:\Odoo\python\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "D:\Odoo\server\odoo\http.py", line 2852, in __call__
+    response = request._serve_db()
+  File "D:\Odoo\server\odoo\http.py", line 2275, in _serve_db
+    registry = Registry(self.db)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1415, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1415, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 24, in LibraryMember
+    _("One user can be linked to only one library member."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:08:32,315 3912 INFO ? odoo.modules.loading: 15 modules loaded in 0.14s, 0 queries (+0 extra) 
+2026-11-20 16:08:32,337 3912 INFO ? odoo.modules.loading: Modules loaded. 
+2026-11-20 16:08:32,343 3912 INFO ? odoo.registry: Registry loaded in 0.179s 
+2026-11-20 16:08:32,344 3912 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-11-20 16:08:32,353 3912 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:08:32] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 23 0.011 0.179
+2026-11-20 16:08:32,371 3912 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:08:32] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.002 0.001
+2026-11-20 16:08:32,663 3912 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-11-20 16:08:44,616 3912 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:08:44] "GET /web/database/selector HTTP/1.1" 200 - 8 0.004 0.398
+2026-11-20 16:09:29,066 24652 INFO odoo odoo.modules.loading: loading 1 modules... 
+2026-11-20 16:09:29,069 24652 INFO odoo odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-11-20 16:09:29,072 24652 INFO odoo odoo.modules.loading: loading 15 modules... 
+2026-11-20 16:09:29,076 24652 WARNING odoo odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001F023CCEEC0, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 20, code LibraryMember> 
+Stack (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1009, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Odoo\server\odoo\service\server.py", line 616, in cron_thread
+    _run_cron(cr)
+  File "D:\Odoo\server\odoo\service\server.py", line 608, in _run_cron
+    IrCron._process_jobs(db_name)
+  File "D:\Odoo\server\odoo\addons\base\models\ir_cron.py", line 199, in _process_jobs
+    cls._process_jobs_loop(cron_cr, job_ids=[job['id'] for job in jobs])
+  File "D:\Odoo\server\odoo\addons\base\models\ir_cron.py", line 235, in _process_jobs_loop
+    registry = Registry(db_name).check_signaling()
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 20, in LibraryMember
+    _("Membership number must be unique."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:09:29,076 24652 WARNING odoo odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001F023CCEEC0, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 24, code LibraryMember> 
+Stack (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1009, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Odoo\server\odoo\service\server.py", line 616, in cron_thread
+    _run_cron(cr)
+  File "D:\Odoo\server\odoo\service\server.py", line 608, in _run_cron
+    IrCron._process_jobs(db_name)
+  File "D:\Odoo\server\odoo\addons\base\models\ir_cron.py", line 199, in _process_jobs
+    cls._process_jobs_loop(cron_cr, job_ids=[job['id'] for job in jobs])
+  File "D:\Odoo\server\odoo\addons\base\models\ir_cron.py", line 235, in _process_jobs_loop
+    registry = Registry(db_name).check_signaling()
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 24, in LibraryMember
+    _("One user can be linked to only one library member."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:09:29,230 24652 INFO odoo odoo.modules.loading: 15 modules loaded in 0.16s, 0 queries (+0 extra) 
+2026-11-20 16:09:29,248 24652 INFO odoo odoo.modules.loading: Modules loaded. 
+2026-11-20 16:09:29,255 24652 INFO odoo odoo.registry: Registry loaded in 0.224s 
+2026-11-20 16:09:29,257 24652 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2026-11-20 16:09:29,350 24652 INFO odoo odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2026-11-20 16:09:29,361 24652 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2026-11-20 16:09:29,379 24652 INFO odoo odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2026-11-20 16:09:29,392 24652 INFO odoo odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2026-11-20 16:09:29,396 24652 INFO odoo odoo.addons.api_doc.models.ir_attachment: GC'd 0 /doc cached index 
+2026-11-20 16:09:29,399 24652 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2026-11-20 16:09:29,403 24652 INFO odoo odoo.addons.base.models.res_users: GC'd 1 user log entries 
+2026-11-20 16:09:29,406 24652 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) fully done (#loop 1; done 0; remaining 0; duration 0.14s) 
+2026-11-20 16:21:33,787 3912 INFO ? odoo.service.server: Initiating shutdown 
+2026-11-20 16:21:33,788 3912 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2026-11-20 16:21:34,184 3912 INFO ? odoo.service.server: cron0 max age (0s) reached, releasing connection. 
+2026-11-20 16:21:34,184 3912 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 4 connections  
+2026-11-20 16:21:36,206 5648 INFO ? odoo: Odoo version 19.0-20261022 
+2026-11-20 16:21:36,207 5648 INFO ? odoo: Using configuration file at d:\odoo\server\odoo.conf 
+2026-11-20 16:21:36,207 5648 INFO ? odoo: addons paths: _NamespacePath(['D:\\Odoo\\server\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\19.0', 'd:\\odoo\\server\\odoo\\addons', 'd:\\odoo\\server\\custom_addons', 'd:\\odoo\\server\\addons']) 
+2026-11-20 16:21:36,207 5648 INFO ? odoo: database: odoo@localhost:5432 
+2026-11-20 16:21:36,467 5648 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-E7061TN:8069 
+2026-11-20 16:21:41,350 24652 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-11-20 16:21:41,360 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:41] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 5 0.005 0.008
+2026-11-20 16:21:41,378 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:41] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.002 0.001
+2026-11-20 16:21:41,672 24652 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-11-20 16:21:51,536 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:51] "GET /odoo/action-93 HTTP/1.1" 200 - 56 0.019 0.196
+2026-11-20 16:21:51,595 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:51] "GET /web/webclient/load_menus HTTP/1.1" 200 - 12 0.004 0.006
+2026-11-20 16:21:52,157 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:52] "GET /web/webclient/translations?hash=&lang=uk_UA HTTP/1.1" 200 - 2 0.000 0.367
+2026-11-20 16:21:52,192 24652 INFO odoo odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: library.loan 
+2026-11-20 16:21:52,360 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:52] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 4 0.031 0.135
+2026-11-20 16:21:52,368 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:52] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 15 0.087 0.089
+2026-11-20 16:21:52,385 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:52] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.014
+2026-11-20 16:21:52,465 24652 WARNING odoo odoo.http: У вас немає доступу до записів 'Видача книги' (library.loan).
+
+Ця операція доступна наступним групам:
+	- Бібліотека/Бібліотекар
+	- Бібліотека/Читач
+
+За потреби зверніться до свого адміністратора, щоб попросити доступ. 
+2026-11-20 16:21:52,465 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:52] "POST /web/dataset/call_kw/library.loan/get_views#library.loan.get_views HTTP/1.1" 200 - 4 0.003 0.272
+2026-11-20 16:21:52,547 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:21:52] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.003
+2026-11-20 16:22:01,775 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:01] "GET /odoo/action-93 HTTP/1.1" 200 - 9 0.003 0.006
+2026-11-20 16:22:01,800 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:01] "GET /web/webclient/load_menus HTTP/1.1" 200 - 1 0.001 0.001
+2026-11-20 16:22:01,917 24652 INFO odoo odoo.addons.base.models.ir_model: Access Denied by ACLs for operation: read, uid: 2, model: library.loan 
+2026-11-20 16:22:01,919 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:01] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.003 0.003
+2026-11-20 16:22:01,923 24652 WARNING odoo odoo.http: У вас немає доступу до записів 'Видача книги' (library.loan).
+
+Ця операція доступна наступним групам:
+	- Бібліотека/Бібліотекар
+	- Бібліотека/Читач
+
+За потреби зверніться до свого адміністратора, щоб попросити доступ. 
+2026-11-20 16:22:01,923 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:01] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.003 0.007
+2026-11-20 16:22:01,923 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:01] "POST /web/dataset/call_kw/library.loan/get_views#library.loan.get_views HTTP/1.1" 200 - 3 0.002 0.007
+2026-11-20 16:22:01,929 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:01] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.002
+2026-11-20 16:22:02,784 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:02] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2026-11-20 16:22:12,780 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:12] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.005
+2026-11-20 16:22:12,806 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:12] "POST /web/dataset/call_kw/res.config.settings/get_views#res.config.settings.get_views HTTP/1.1" 200 - 12 0.005 0.008
+2026-11-20 16:22:12,830 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:12] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 30 0.007 0.007
+2026-11-20 16:22:12,856 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:12] "POST /base_setup/demo_active HTTP/1.1" 200 - 3 0.002 0.001
+2026-11-20 16:22:12,863 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:12] "POST /base_setup/data HTTP/1.1" 200 - 6 0.003 0.000
+2026-11-20 16:22:12,921 24652 INFO ? werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:12] "GET /base/static/description/settings.png HTTP/1.1" 200 - 0 0.000 0.002
+2026-11-20 16:22:16,874 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:16] "POST /web/dataset/call_kw/res.config.settings/web_save#res.config.settings.web_save HTTP/1.1" 200 - 17 0.005 0.008
+2026-11-20 16:22:16,893 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:16] "POST /web/action/load HTTP/1.1" 200 - 12 0.004 0.004
+2026-11-20 16:22:16,948 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:16] "POST /web/dataset/call_kw/res.users/get_views#res.users.get_views HTTP/1.1" 200 - 62 0.021 0.028
+2026-11-20 16:22:16,971 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:16] "POST /web/dataset/call_kw/res.users/web_search_read#res.users.web_search_read HTTP/1.1" 200 - 17 0.001 0.013
+2026-11-20 16:22:20,472 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:20] "POST /web/dataset/call_kw/res.users/web_read#res.users.web_read HTTP/1.1" 200 - 42 0.014 0.016
+2026-11-20 16:22:25,890 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:25] "POST /web/dataset/call_kw/res.users/onchange#res.users.onchange HTTP/1.1" 200 - 28 0.006 0.017
+2026-11-20 16:22:28,929 24652 INFO odoo odoo.registry: Caches invalidated, signaling through the database: ['default', 'stable'] 
+2026-11-20 16:22:28,931 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:28] "POST /web/dataset/call_kw/res.users/web_save#res.users.web_save HTTP/1.1" 200 - 71 0.023 0.023
+2026-11-20 16:22:28,952 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:28] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 17 0.004 0.006
+2026-11-20 16:22:30,578 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:30] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 29 0.007 0.005
+2026-11-20 16:22:31,614 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "POST /web/dataset/call_kw/res.config.settings/web_save#res.config.settings.web_save HTTP/1.1" 200 - 18 0.002 0.007
+2026-11-20 16:22:31,631 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "POST /web/dataset/call_button/res.config.settings/execute#res.config.settings.execute HTTP/1.1" 200 - 5 0.002 0.004
+2026-11-20 16:22:31,654 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "GET /odoo/settings HTTP/1.1" 200 - 21 0.003 0.009
+2026-11-20 16:22:31,686 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "GET /web/webclient/load_menus HTTP/1.1" 200 - 11 0.004 0.006
+2026-11-20 16:22:31,780 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "GET /web/webclient/translations?hash=2b6b5e856eafa8f36a62db36518c37552f19d65b&lang=uk_UA HTTP/1.1" 200 - 2 0.001 0.011
+2026-11-20 16:22:31,823 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.000 0.008
+2026-11-20 16:22:31,826 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 8 0.005 0.005
+2026-11-20 16:22:31,826 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "POST /web/dataset/call_kw/res.config.settings/get_views#res.config.settings.get_views HTTP/1.1" 200 - 3 0.003 0.007
+2026-11-20 16:22:31,834 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 8 0.002 0.011
+2026-11-20 16:22:31,841 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.000 0.003
+2026-11-20 16:22:31,872 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "POST /base_setup/demo_active HTTP/1.1" 200 - 3 0.001 0.002
+2026-11-20 16:22:31,875 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:31] "POST /base_setup/data HTTP/1.1" 200 - 6 0.003 0.001
+2026-11-20 16:22:32,610 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:32] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.000 0.002
+2026-11-20 16:22:33,376 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:33] "POST /web/action/load HTTP/1.1" 200 - 9 0.001 0.005
+2026-11-20 16:22:33,404 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:33] "POST /web/dataset/call_kw/library.book/get_views#library.book.get_views HTTP/1.1" 200 - 26 0.006 0.011
+2026-11-20 16:22:33,415 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:33] "POST /web/dataset/call_kw/library.book/web_search_read#library.book.web_search_read HTTP/1.1" 200 - 3 0.000 0.003
+2026-11-20 16:22:53,919 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:53] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.005
+2026-11-20 16:22:53,933 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:53] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 8 0.003 0.003
+2026-11-20 16:22:55,207 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:55] "POST /web/dataset/call_kw/res.config.settings/web_save#res.config.settings.web_save HTTP/1.1" 200 - 10 0.003 0.005
+2026-11-20 16:22:55,224 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:55] "POST /web/action/load HTTP/1.1" 200 - 12 0.004 0.005
+2026-11-20 16:22:55,256 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:55] "POST /web/dataset/call_kw/res.users/web_search_read#res.users.web_search_read HTTP/1.1" 200 - 10 0.008 0.009
+2026-11-20 16:22:55,259 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:55] "POST /web/dataset/call_kw/res.users/get_views#res.users.get_views HTTP/1.1" 200 - 22 0.011 0.018
+2026-11-20 16:22:58,173 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:22:58] "POST /web/dataset/call_kw/res.users/onchange#res.users.onchange HTTP/1.1" 200 - 17 0.007 0.008
+2026-11-20 16:23:04,962 24652 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:23:04] "POST /web/dataset/call_kw/res.users/onchange#res.users.onchange HTTP/1.1" 200 - 4 0.001 0.007
+2026-11-20 16:24:45,380 5648 INFO ? odoo.modules.loading: loading 1 modules... 
+2026-11-20 16:24:45,382 5648 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-11-20 16:24:45,385 5648 INFO ? odoo.modules.loading: loading 15 modules... 
+2026-11-20 16:24:45,391 5648 WARNING ? odoo.tools.translate: no translation language detected, skipping translation <frame at 0x0000027FA5007DC0, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 20, code LibraryMember> 
+Stack (most recent call last):
+  File "D:\Odoo\python\Lib\threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "D:\Odoo\python\Lib\threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "D:\Odoo\python\Lib\threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Odoo\python\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "D:\Odoo\python\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "D:\Odoo\server\odoo\service\server.py", line 132, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Odoo\python\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 390, in handle
+    super().handle()
+  File "D:\Odoo\python\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "D:\Odoo\python\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "D:\Odoo\server\odoo\http.py", line 2852, in __call__
+    response = request._serve_db()
+  File "D:\Odoo\server\odoo\http.py", line 2275, in _serve_db
+    registry = Registry(self.db)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1415, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1415, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 20, in LibraryMember
+    _("Membership number must be unique."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:24:45,391 5648 WARNING ? odoo.tools.translate: no translation language detected, skipping translation <frame at 0x0000027FA5007DC0, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 24, code LibraryMember> 
+Stack (most recent call last):
+  File "D:\Odoo\python\Lib\threading.py", line 1030, in _bootstrap
+    self._bootstrap_inner()
+  File "D:\Odoo\python\Lib\threading.py", line 1073, in _bootstrap_inner
+    self.run()
+  File "D:\Odoo\python\Lib\threading.py", line 1010, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Odoo\python\Lib\socketserver.py", line 692, in process_request_thread
+    self.finish_request(request, client_address)
+  File "D:\Odoo\python\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "D:\Odoo\server\odoo\service\server.py", line 132, in __init__
+    super().__init__(*args, **kwargs)
+  File "D:\Odoo\python\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 390, in handle
+    super().handle()
+  File "D:\Odoo\python\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "D:\Odoo\python\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 362, in run_wsgi
+    execute(self.server.app)
+  File "D:\Odoo\python\Lib\site-packages\werkzeug\serving.py", line 323, in execute
+    application_iter = app(environ, start_response)
+  File "D:\Odoo\server\odoo\http.py", line 2852, in __call__
+    response = request._serve_db()
+  File "D:\Odoo\server\odoo\http.py", line 2275, in _serve_db
+    registry = Registry(self.db)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1415, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1415, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 24, in LibraryMember
+    _("One user can be linked to only one library member."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:24:45,518 5648 INFO ? odoo.modules.loading: 15 modules loaded in 0.13s, 0 queries (+0 extra) 
+2026-11-20 16:24:45,539 5648 INFO ? odoo.modules.loading: Modules loaded. 
+2026-11-20 16:24:45,546 5648 INFO ? odoo.registry: Registry loaded in 0.173s 
+2026-11-20 16:24:45,546 5648 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-11-20 16:24:45,555 5648 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:24:45] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 23 0.012 0.171
+2026-11-20 16:24:45,574 5648 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:24:45] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.003 0.000
+2026-11-20 16:24:45,865 5648 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-11-20 16:24:49,619 22060 INFO ? odoo: Odoo version 19.0-20261022 
+2026-11-20 16:24:49,619 22060 INFO ? odoo: Using configuration file at d:\odoo\server\odoo.conf 
+2026-11-20 16:24:49,619 22060 INFO ? odoo: addons paths: _NamespacePath(['D:\\Odoo\\server\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\19.0', 'd:\\odoo\\server\\odoo\\addons', 'd:\\odoo\\server\\custom_addons', 'd:\\odoo\\server\\addons']) 
+2026-11-20 16:24:49,619 22060 INFO ? odoo: database: odoo@localhost:5432 
+2026-11-20 16:24:49,904 22060 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-E7061TN:8069 
+2026-11-20 16:25:40,747 5648 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2026-11-20 16:25:40,818 5648 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2026-11-20 16:25:40,824 5648 INFO odoo odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2026-11-20 16:25:40,830 5648 INFO odoo odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2026-11-20 16:25:40,836 5648 INFO odoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2026-11-20 16:25:40,839 5648 INFO odoo odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2026-11-20 16:25:40,851 5648 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2026-11-20 16:25:40,857 5648 INFO odoo odoo.addons.api_doc.models.ir_attachment: GC'd 0 /doc cached index 
+2026-11-20 16:25:40,876 5648 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) fully done (#loop 1; done 0; remaining 0; duration 0.12s) 
+2026-11-20 16:25:50,043 22060 INFO odoo odoo.modules.loading: loading 1 modules... 
+2026-11-20 16:25:50,045 22060 INFO odoo odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2026-11-20 16:25:50,048 22060 INFO odoo odoo.modules.loading: loading 15 modules... 
+2026-11-20 16:25:50,053 22060 WARNING odoo odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001DC683DEEC0, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 20, code LibraryMember> 
+Stack (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1009, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Odoo\server\odoo\service\server.py", line 616, in cron_thread
+    _run_cron(cr)
+  File "D:\Odoo\server\odoo\service\server.py", line 608, in _run_cron
+    IrCron._process_jobs(db_name)
+  File "D:\Odoo\server\odoo\addons\base\models\ir_cron.py", line 199, in _process_jobs
+    cls._process_jobs_loop(cron_cr, job_ids=[job['id'] for job in jobs])
+  File "D:\Odoo\server\odoo\addons\base\models\ir_cron.py", line 235, in _process_jobs_loop
+    registry = Registry(db_name).check_signaling()
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 20, in LibraryMember
+    _("Membership number must be unique."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:25:50,054 22060 WARNING odoo odoo.tools.translate: no translation language detected, skipping translation <frame at 0x000001DC683DEEC0, file 'd:\\odoo\\server\\custom_addons\\library_rental\\models\\member.py', line 24, code LibraryMember> 
+Stack (most recent call last):
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1009, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 1052, in _bootstrap_inner
+    self.run()
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python312\Lib\threading.py", line 989, in run
+    self._target(*self._args, **self._kwargs)
+  File "D:\Odoo\server\odoo\service\server.py", line 616, in cron_thread
+    _run_cron(cr)
+  File "D:\Odoo\server\odoo\service\server.py", line 608, in _run_cron
+    IrCron._process_jobs(db_name)
+  File "D:\Odoo\server\odoo\addons\base\models\ir_cron.py", line 199, in _process_jobs
+    cls._process_jobs_loop(cron_cr, job_ids=[job['id'] for job in jobs])
+  File "D:\Odoo\server\odoo\addons\base\models\ir_cron.py", line 235, in _process_jobs_loop
+    registry = Registry(db_name).check_signaling()
+  File "D:\Odoo\server\odoo\orm\registry.py", line 108, in __new__
+    return cls.new(db_name)
+  File "D:\Odoo\server\odoo\tools\func.py", line 88, in locked
+    return func(inst, *args, **kwargs)
+  File "D:\Odoo\server\odoo\orm\registry.py", line 189, in new
+    load_modules(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 464, in load_modules
+    load_module_graph(
+  File "D:\Odoo\server\odoo\modules\loading.py", line 178, in load_module_graph
+    load_openerp_module(package.name)
+  File "D:\Odoo\server\odoo\modules\module.py", line 506, in load_openerp_module
+    __import__(qualname)
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\__init__.py", line 3, in <module>
+    from . import models
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\__init__.py", line 3, in <module>
+    from . import member
+  File "<frozen importlib._bootstrap>", line 1409, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 994, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 5, in <module>
+    class LibraryMember(models.Model):
+  File "d:\odoo\server\custom_addons\library_rental\models\member.py", line 24, in LibraryMember
+    _("One user can be linked to only one library member."),
+  File "D:\Odoo\server\odoo\tools\translate.py", line 584, in get_text_alias
+    module, lang = _get_translation_source(1)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 573, in _get_translation_source
+    lang = lang or _get_lang(frame, default_lang)
+  File "D:\Odoo\server\odoo\tools\translate.py", line 564, in _get_lang
+    _logger.log(log_level, 'no translation language detected, skipping translation %s', frame, stack_info=True)
+2026-11-20 16:25:50,212 22060 INFO odoo odoo.modules.loading: 15 modules loaded in 0.16s, 0 queries (+0 extra) 
+2026-11-20 16:25:50,232 22060 INFO odoo odoo.modules.loading: Modules loaded. 
+2026-11-20 16:25:50,239 22060 INFO odoo odoo.registry: Registry loaded in 0.231s 
+2026-11-20 16:25:50,240 22060 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) starting 
+2026-11-20 16:25:50,316 22060 INFO odoo odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2026-11-20 16:25:50,319 22060 INFO odoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2026-11-20 16:25:50,323 22060 INFO odoo odoo.addons.base.models.res_users: GC 'auth_totp.device' delete 0 entries 
+2026-11-20 16:25:50,326 22060 INFO odoo odoo.addons.api_doc.models.ir_attachment: GC'd 0 /doc cached index 
+2026-11-20 16:25:50,359 22060 INFO odoo odoo.addons.base.models.res_users: GC 'res.users.apikeys' delete 0 entries 
+2026-11-20 16:25:50,360 22060 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2026-11-20 16:25:50,366 22060 INFO odoo odoo.addons.base.models.res_device: GC device logs delete 0 entries 
+2026-11-20 16:25:50,374 22060 INFO odoo odoo.addons.base.models.ir_cron: Job 'Base: Auto-vacuum internal data' (1) fully done (#loop 1; done 0; remaining 0; duration 0.12s) 
+2026-11-20 16:26:22,742 5648 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:26:22] "GET /web/database/selector HTTP/1.1" 200 - 8 0.005 0.403
+2026-11-20 16:27:10,040 5648 INFO ? odoo.service.server: Initiating shutdown 
+2026-11-20 16:27:10,040 5648 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2026-11-20 16:27:10,259 5648 INFO ? odoo.service.server: cron0 max age (0s) reached, releasing connection. 
+2026-11-20 16:27:10,259 5648 INFO ? odoo.sql_db: ConnectionPool(read/write;used=0/count=0/max=64): Closed 6 connections  
+2026-11-20 16:27:12,405 7364 INFO ? odoo: Odoo version 19.0-20261022 
+2026-11-20 16:27:12,405 7364 INFO ? odoo: Using configuration file at d:\odoo\server\odoo.conf 
+2026-11-20 16:27:12,405 7364 INFO ? odoo: addons paths: _NamespacePath(['D:\\Odoo\\server\\odoo\\addons', 'c:\\users\\admin\\appdata\\local\\openerp s.a\\odoo\\addons\\19.0', 'd:\\odoo\\server\\odoo\\addons', 'd:\\odoo\\server\\custom_addons', 'd:\\odoo\\server\\addons']) 
+2026-11-20 16:27:12,405 7364 INFO ? odoo: database: odoo@localhost:5432 
+2026-11-20 16:27:12,640 7364 INFO ? odoo.service.server: HTTP service (werkzeug) running on DESKTOP-E7061TN:8069 
+2026-11-20 16:27:19,472 22060 INFO odoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2026-11-20 16:27:19,481 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:19] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 5 0.005 0.006
+2026-11-20 16:27:19,791 22060 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2026-11-20 16:27:22,932 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:22] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.000 0.002
+2026-11-20 16:27:23,145 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "GET /odoo/settings/4/users/new HTTP/1.1" 200 - 56 0.016 0.200
+2026-11-20 16:27:23,227 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "GET /web/webclient/load_menus HTTP/1.1" 200 - 12 0.004 0.006
+2026-11-20 16:27:23,673 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "GET /web/webclient/translations?hash=&lang=uk_UA HTTP/1.1" 200 - 2 0.000 0.355
+2026-11-20 16:27:23,749 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "GET /web/image/res.partner/3/avatar_128?unique=1795184678000 HTTP/1.1" 200 - 14 0.008 0.030
+2026-11-20 16:27:23,749 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 15 0.017 0.020
+2026-11-20 16:27:23,754 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 4 0.002 0.037
+2026-11-20 16:27:23,768 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.000 0.006
+2026-11-20 16:27:23,776 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "POST /web/dataset/call_kw/res.users/get_views#res.users.get_views HTTP/1.1" 200 - 68 0.031 0.034
+2026-11-20 16:27:23,810 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "POST /web/dataset/call_kw/res.users/onchange#res.users.onchange HTTP/1.1" 200 - 33 0.008 0.016
+2026-11-20 16:27:23,933 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:23] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002
+2026-11-20 16:27:29,209 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:29] "POST /web/action/load HTTP/1.1" 200 - 10 0.004 0.003
+2026-11-20 16:27:29,228 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:29] "POST /web/dataset/call_kw/res.config.settings/get_views#res.config.settings.get_views HTTP/1.1" 200 - 9 0.000 0.010
+2026-11-20 16:27:29,250 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:29] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 26 0.004 0.008
+2026-11-20 16:27:29,273 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:29] "POST /base_setup/demo_active HTTP/1.1" 200 - 3 0.003 0.000
+2026-11-20 16:27:29,277 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:29] "POST /base_setup/data HTTP/1.1" 200 - 6 0.002 0.001
+2026-11-20 16:27:34,075 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:34] "POST /web/dataset/call_kw/res.config.settings/web_save#res.config.settings.web_save HTTP/1.1" 200 - 17 0.007 0.003
+2026-11-20 16:27:34,100 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:34] "POST /web/action/load HTTP/1.1" 200 - 12 0.005 0.003
+2026-11-20 16:27:34,121 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:34] "POST /web/dataset/call_kw/res.users/web_search_read#res.users.web_search_read HTTP/1.1" 200 - 14 0.004 0.007
+2026-11-20 16:27:36,027 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:36] "POST /web/dataset/call_kw/res.users/onchange#res.users.onchange HTTP/1.1" 200 - 13 0.006 0.007
+2026-11-20 16:27:40,377 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:40] "POST /web/dataset/call_kw/res.users/onchange#res.users.onchange HTTP/1.1" 200 - 4 0.002 0.004
+2026-11-20 16:27:57,859 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:57] "POST /web/dataset/call_kw/res.users/onchange#res.users.onchange HTTP/1.1" 200 - 4 0.001 0.006
+2026-11-20 16:27:58,861 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:27:58] "POST /web/dataset/call_kw/res.users/onchange#res.users.onchange HTTP/1.1" 200 - 7 0.002 0.007
+2026-11-20 16:28:02,621 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:02] "POST /web/dataset/call_kw/res.users/web_save#res.users.web_save HTTP/1.1" 200 - 45 0.021 0.039
+2026-11-20 16:28:02,658 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:02] "GET /web/image/res.users/5/avatar_128 HTTP/1.1" 200 - 8 0.003 0.005
+2026-11-20 16:28:06,099 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:06] "POST /web/action/load HTTP/1.1" 200 - 9 0.003 0.003
+2026-11-20 16:28:06,119 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:06] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 8 0.002 0.004
+2026-11-20 16:28:09,789 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:09] "POST /web/dataset/call_kw/res.config.settings/web_save#res.config.settings.web_save HTTP/1.1" 200 - 10 0.003 0.006
+2026-11-20 16:28:09,807 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:09] "POST /web/action/load HTTP/1.1" 200 - 12 0.002 0.006
+2026-11-20 16:28:09,823 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:09] "POST /web/dataset/call_kw/res.users/web_search_read#res.users.web_search_read HTTP/1.1" 200 - 10 0.005 0.004
+2026-11-20 16:28:12,513 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:12] "POST /web/dataset/call_kw/res.users/web_read#res.users.web_read HTTP/1.1" 200 - 28 0.009 0.012
+2026-11-20 16:28:16,713 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:16] "POST /web/dataset/call_button/res.users/action_change_password_wizard#res.users.action_change_password_wizard HTTP/1.1" 200 - 1 0.001 0.001
+2026-11-20 16:28:16,735 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:16] "POST /web/dataset/call_kw/change.password.wizard/get_views#change.password.wizard.get_views HTTP/1.1" 200 - 17 0.005 0.007
+2026-11-20 16:28:16,745 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:16] "POST /web/dataset/call_kw/change.password.wizard/onchange#change.password.wizard.onchange HTTP/1.1" 200 - 5 0.001 0.004
+2026-11-20 16:28:21,358 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:21] "POST /web/dataset/call_kw/change.password.wizard/web_save#change.password.wizard.web_save HTTP/1.1" 200 - 11 0.008 0.004
+2026-11-20 16:28:21,374 22060 INFO odoo odoo.addons.base.models.res_users: Password change for 'andri@gmail.com' (#5) by 'maksropcan@gmail.com' (#2) from 127.0.0.1 
+2026-11-20 16:28:21,707 22060 INFO odoo odoo.registry: Caches invalidated, signaling through the database: ['default'] 
+2026-11-20 16:28:21,708 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:21] "POST /web/dataset/call_button/change.password.wizard/change_password_button#change.password.wizard.change_password_button HTTP/1.1" 200 - 20 0.003 0.335
+2026-11-20 16:28:21,740 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:21] "POST /web/dataset/call_kw/res.users/web_read#res.users.web_read HTTP/1.1" 200 - 42 0.011 0.013
+2026-11-20 16:28:26,966 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:26] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 12 0.004 0.004
+2026-11-20 16:28:27,973 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:27] "POST /web/dataset/call_kw/res.config.settings/web_save#res.config.settings.web_save HTTP/1.1" 200 - 14 0.004 0.005
+2026-11-20 16:28:27,992 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:27] "POST /web/dataset/call_button/res.config.settings/execute#res.config.settings.execute HTTP/1.1" 200 - 3 0.003 0.001
+2026-11-20 16:28:28,015 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "GET /odoo/settings HTTP/1.1" 200 - 11 0.004 0.007
+2026-11-20 16:28:28,047 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "GET /web/webclient/load_menus HTTP/1.1" 200 - 11 0.006 0.003
+2026-11-20 16:28:28,151 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "GET /web/webclient/translations?hash=2b6b5e856eafa8f36a62db36518c37552f19d65b&lang=uk_UA HTTP/1.1" 200 - 1 0.001 0.009
+2026-11-20 16:28:28,179 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "POST /web/dataset/call_kw/res.config.settings/get_views#res.config.settings.get_views HTTP/1.1" 200 - 2 0.003 0.003
+2026-11-20 16:28:28,186 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.002 0.008
+2026-11-20 16:28:28,189 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "POST /web/dataset/call_kw/res.config.settings/onchange#res.config.settings.onchange HTTP/1.1" 200 - 8 0.008 0.004
+2026-11-20 16:28:28,193 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 15 0.011 0.006
+2026-11-20 16:28:28,197 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.000 0.003
+2026-11-20 16:28:28,230 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "POST /base_setup/demo_active HTTP/1.1" 200 - 3 0.001 0.003
+2026-11-20 16:28:28,233 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "POST /base_setup/data HTTP/1.1" 200 - 6 0.002 0.000
+2026-11-20 16:28:28,968 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:28] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.001
+2026-11-20 16:28:29,249 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:29] "POST /web/action/load HTTP/1.1" 200 - 9 0.005 0.002
+2026-11-20 16:28:29,275 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:29] "POST /web/dataset/call_kw/library.book/get_views#library.book.get_views HTTP/1.1" 200 - 26 0.005 0.011
+2026-11-20 16:28:29,285 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:29] "POST /web/dataset/call_kw/library.book/web_search_read#library.book.web_search_read HTTP/1.1" 200 - 3 0.000 0.003
+2026-11-20 16:28:30,391 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:30] "POST /web/action/load HTTP/1.1" 200 - 9 0.002 0.004
+2026-11-20 16:28:30,414 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:30] "POST /web/dataset/call_kw/library.loan/get_views#library.loan.get_views HTTP/1.1" 200 - 17 0.004 0.009
+2026-11-20 16:28:30,438 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:30] "POST /web/dataset/call_kw/library.loan/web_search_read#library.loan.web_search_read HTTP/1.1" 200 - 9 0.001 0.006
+2026-11-20 16:28:31,070 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:31] "POST /web/dataset/call_kw/library.loan/onchange#library.loan.onchange HTTP/1.1" 200 - 2 0.002 0.003
+2026-11-20 16:28:32,055 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:32] "POST /web/dataset/call_kw/library.copy/web_name_search#library.copy.web_name_search HTTP/1.1" 200 - 3 0.001 0.003
+2026-11-20 16:28:32,828 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:32] "POST /web/dataset/call_kw/library.loan/onchange#library.loan.onchange HTTP/1.1" 200 - 4 0.002 0.002
+2026-11-20 16:28:33,486 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:33] "POST /web/dataset/call_kw/library.member/web_name_search#library.member.web_name_search HTTP/1.1" 200 - 3 0.002 0.002
+2026-11-20 16:28:35,565 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:35] "POST /web/dataset/call_kw/library.member/web_name_search#library.member.web_name_search HTTP/1.1" 200 - 2 0.001 0.002
+2026-11-20 16:28:36,264 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:36] "POST /web/dataset/call_kw/library.member/get_views#library.member.get_views HTTP/1.1" 200 - 11 0.004 0.004
+2026-11-20 16:28:36,275 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:36] "POST /web/dataset/call_kw/library.member/web_search_read#library.member.web_search_read HTTP/1.1" 200 - 2 0.002 0.000
+2026-11-20 16:28:39,120 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:39] "POST /web/dataset/call_kw/library.member/web_read#library.member.web_read HTTP/1.1" 200 - 2 0.001 0.001
+2026-11-20 16:28:42,063 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:42] "POST /web/dataset/call_kw/library.member/web_name_search#library.member.web_name_search HTTP/1.1" 200 - 2 0.000 0.002
+2026-11-20 16:28:43,001 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:42] "POST /web/dataset/call_kw/library.member/web_search_read#library.member.web_search_read HTTP/1.1" 200 - 2 0.001 0.002
+2026-11-20 16:28:44,432 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:44] "POST /web/dataset/call_kw/library.member/get_views#library.member.get_views HTTP/1.1" 200 - 4 0.000 0.005
+2026-11-20 16:28:44,443 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:44] "POST /web/dataset/call_kw/library.member/onchange#library.member.onchange HTTP/1.1" 200 - 2 0.002 0.000
+2026-11-20 16:28:52,805 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:52] "POST /web/dataset/call_kw/res.users/web_name_search#res.users.web_name_search HTTP/1.1" 200 - 4 0.001 0.004
+2026-11-20 16:28:55,715 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:28:55] "POST /web/dataset/call_kw/res.users/web_name_search#res.users.web_name_search HTTP/1.1" 200 - 4 0.001 0.004
+2026-11-20 16:29:06,058 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:06] "POST /web/dataset/call_kw/res.users/web_name_search#res.users.web_name_search HTTP/1.1" 200 - 4 0.001 0.003
+2026-11-20 16:29:17,207 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:17] "POST /web/dataset/call_kw/library.member/web_save#library.member.web_save HTTP/1.1" 200 - 4 0.003 0.003
+2026-11-20 16:29:22,850 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:22] "POST /web/dataset/call_kw/library.loan/onchange#library.loan.onchange HTTP/1.1" 200 - 1 0.002 0.001
+2026-11-20 16:29:24,886 22060 WARNING odoo odoo.http: Дата фактичного повернення не може бути раніше дати видачі. 
+2026-11-20 16:29:24,886 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:24] "POST /web/dataset/call_kw/library.loan/web_save#library.loan.web_save HTTP/1.1" 200 - 3 0.005 0.008
+2026-11-20 16:29:29,741 22060 WARNING odoo odoo.http: Дата фактичного повернення не може бути раніше дати видачі. 
+2026-11-20 16:29:29,741 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:29] "POST /web/dataset/call_kw/library.loan/web_save#library.loan.web_save HTTP/1.1" 200 - 3 0.000 0.003
+2026-11-20 16:29:34,838 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:34] "POST /web/dataset/call_kw/library.loan/onchange#library.loan.onchange HTTP/1.1" 200 - 1 0.002 0.002
+2026-11-20 16:29:36,413 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:36] "POST /web/dataset/call_kw/library.loan/web_save#library.loan.web_save HTTP/1.1" 200 - 11 0.004 0.004
+2026-11-20 16:29:39,842 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:39] "POST /web/dataset/call_kw/library.loan/web_search_read#library.loan.web_search_read HTTP/1.1" 200 - 5 0.001 0.004
+2026-11-20 16:29:54,994 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:54] "GET /web/session/logout HTTP/1.1" 303 - 1 0.000 0.003
+2026-11-20 16:29:55,008 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:55] "GET /odoo HTTP/1.1" 303 - 1 0.002 0.005
+2026-11-20 16:29:55,156 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:55] "GET /web/login?redirect=/odoo? HTTP/1.1" 200 - 38 0.009 0.132
+2026-11-20 16:29:55,232 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:55] "GET /web/binary/company_logo HTTP/1.1" 304 - 2 0.001 0.023
+2026-11-20 16:29:55,346 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:55] "GET /web/webclient/translations?hash=&lang= HTTP/1.1" 200 - 2 0.001 0.017
+2026-11-20 16:29:56,018 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:29:56] "GET /web/service-worker.js HTTP/1.1" 200 - 2 0.001 0.003
+2026-11-20 16:30:06,564 22060 INFO odoo odoo.addons.base.models.res_users: Login successful for login:andri@gmail.com from 127.0.0.1 
+2026-11-20 16:30:06,569 22060 INFO odoo odoo.registry: Caches invalidated, signaling through the database: ['default'] 
+2026-11-20 16:30:06,570 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "POST /web/login HTTP/1.1" 303 - 21 0.009 0.359
+2026-11-20 16:30:06,588 22060 INFO odoo odoo.addons.base.models.res_device: User 5 inserts device log (g1_Le2PZgf8HN329v7hE3cKAhbwsCK7mC-DTA0Vnbb) 
+2026-11-20 16:30:06,594 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "GET /odoo HTTP/1.1" 200 - 10 0.002 0.012
+2026-11-20 16:30:06,640 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "GET /web/webclient/load_menus HTTP/1.1" 200 - 12 0.004 0.009
+2026-11-20 16:30:06,735 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "GET /web/webclient/translations?hash=2b6b5e856eafa8f36a62db36518c37552f19d65b&lang=uk_UA HTTP/1.1" 200 - 1 0.000 0.012
+2026-11-20 16:30:06,747 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.001
+2026-11-20 16:30:06,754 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "POST /web/action/load HTTP/1.1" 200 - 9 0.001 0.007
+2026-11-20 16:30:06,761 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "POST /bus/has_missed_notifications HTTP/1.1" 200 - 2 0.002 0.005
+2026-11-20 16:30:06,765 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "GET /web/image/res.partner/6/avatar_128?unique=1795185006000 HTTP/1.1" 200 - 14 0.009 0.006
+2026-11-20 16:30:06,766 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "GET /web/image?model=res.users&field=avatar_128&id=5 HTTP/1.1" 200 - 15 0.006 0.011
+2026-11-20 16:30:06,779 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "POST /web/dataset/call_kw/library.loan/get_views#library.loan.get_views HTTP/1.1" 200 - 10 0.003 0.004
+2026-11-20 16:30:06,797 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:06] "POST /web/dataset/call_kw/library.loan/web_search_read#library.loan.web_search_read HTTP/1.1" 200 - 10 0.004 0.004
+2026-11-20 16:30:07,603 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:07] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.000
+2026-11-20 16:30:12,127 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:12] "GET /odoo/action-95 HTTP/1.1" 200 - 8 0.001 0.008
+2026-11-20 16:30:12,152 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:12] "GET /web/webclient/load_menus HTTP/1.1" 200 - 1 0.001 0.002
+2026-11-20 16:30:12,283 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:12] "POST /web/dataset/call_kw/library.loan/get_views#library.loan.get_views HTTP/1.1" 200 - 2 0.002 0.011
+2026-11-20 16:30:12,285 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:12] "GET /web/image?model=res.users&field=avatar_128&id=5 HTTP/1.1" 304 - 8 0.005 0.010
+2026-11-20 16:30:12,285 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:12] "GET /bus/websocket_worker_bundle?v=19.0-2 HTTP/1.1" 304 - 3 0.003 0.010
+2026-11-20 16:30:12,287 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:12] "POST /web/dataset/call_kw/library.loan/web_search_read#library.loan.web_search_read HTTP/1.1" 200 - 6 0.003 0.007
+2026-11-20 16:30:12,324 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:12] "GET /websocket?version=19.0-2 HTTP/1.1" 101 - 1 0.001 0.001
+2026-11-20 16:30:13,136 22060 INFO odoo werkzeug: 127.0.0.1 - - [20/Nov/2026 16:30:13] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.002

@@ -1,5 +1,9 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_library_book_user,Книги: користувач,model_library_book,base.group_user,1,1,1,1
-access_library_copy_user,Примірники: користувач,model_library_copy,base.group_user,1,1,1,1
-access_library_member_user,Читачі: користувач,model_library_member,base.group_user,1,1,1,1
-access_library_loan_user,Видачі: користувач,model_library_loan,base.group_user,1,1,1,1
+access_library_book_librarian,Books: librarian,model_library_book,group_library_librarian,1,1,1,1
+access_library_copy_librarian,Copies: librarian,model_library_copy,group_library_librarian,1,1,1,1
+access_library_member_librarian,Members: librarian,model_library_member,group_library_librarian,1,1,1,1
+access_library_loan_librarian,Loans: librarian,model_library_loan,group_library_librarian,1,1,1,1
+access_library_book_reader,Books: reader,model_library_book,group_library_reader,1,0,0,0
+access_library_copy_reader,Copies: reader,model_library_copy,group_library_reader,1,0,0,0
+access_library_member_reader,Members: reader no access,model_library_member,group_library_reader,0,0,0,0
+access_library_loan_reader,Loans: reader,model_library_loan,group_library_reader,1,0,0,0

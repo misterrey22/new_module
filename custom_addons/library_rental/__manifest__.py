@@ -7,6 +7,7 @@
     "description": "Модуль для керування бібліотечним фондом і видачами книг.",
     "depends": ["base"],
     "data": [
+        "security/library_security.xml",
         "security/ir.model.access.csv",
         "views/library_views.xml",
     ],

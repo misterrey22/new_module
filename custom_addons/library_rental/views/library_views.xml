@@ -83,6 +83,7 @@
             <list string="Members">
                 <field name="name"/>
                 <field name="membership_number"/>
+                <field name="user_id"/>
             </list>
         </field>
     </record>
@@ -95,6 +96,7 @@
                     <group>
                         <field name="name"/>
                         <field name="membership_number"/>
+                        <field name="user_id"/>
                     </group>
                 </sheet>
             </form>
@@ -113,7 +115,7 @@
             <list string="Loans" decoration-danger="is_overdue">
                 <field name="copy_id"/>
                 <field name="book_author"/>
-                <field name="member_id"/>
+                <field name="member_id" groups="library_rental.group_library_librarian"/>
                 <field name="loan_date"/>
                 <field name="due_date"/>
                 <field name="return_date"/>
@@ -139,7 +141,7 @@
                     <group>
                         <field name="copy_id"/>
                         <field name="book_author"/>
-                        <field name="member_id"/>
+                        <field name="member_id" groups="library_rental.group_library_librarian"/>
                         <field name="loan_date"/>
                         <field name="due_date" readonly="1"/>
                         <field name="return_date"/>
@@ -155,13 +157,26 @@
         <field name="view_mode">list,form</field>
     </record>
 
+    <record id="action_library_my_loans" model="ir.actions.act_window">
+        <field name="name">Мої видачі</field>
+        <field name="res_model">library.loan</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
     <menuitem id="menu_library_root" name="Library Rental" sequence="50"/>
     <menuitem id="menu_library_books" name="Books" parent="menu_library_root"
-              action="action_library_book" sequence="10"/>
+              action="action_library_book" sequence="10"
+              groups="library_rental.group_library_librarian"/>
     <menuitem id="menu_library_copies" name="Copies" parent="menu_library_root"
-              action="action_library_copy" sequence="20"/>
+              action="action_library_copy" sequence="20"
+              groups="library_rental.group_library_librarian"/>
     <menuitem id="menu_library_members" name="Members" parent="menu_library_root"
-              action="action_library_member" sequence="30"/>
+              action="action_library_member" sequence="30"
+              groups="library_rental.group_library_librarian"/>
     <menuitem id="menu_library_loans" name="Loans" parent="menu_library_root"
-              action="action_library_loan" sequence="40"/>
+              action="action_library_loan" sequence="40"
+              groups="library_rental.group_library_librarian"/>
+    <menuitem id="menu_library_my_loans" name="Мої видачі" parent="menu_library_root"
+              action="action_library_my_loans" sequence="10"
+              groups="library_rental.group_library_reader"/>
 </odoo>
