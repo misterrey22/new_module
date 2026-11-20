@@ -133,6 +133,12 @@
                 <header>
                     <field name="display_status" widget="statusbar"
                            statusbar_visible="active,overdue,returned"/>
+                    <button name="%(action_library_return_wizard)d"
+                            type="action"
+                            string="Оформити повернення"
+                            context="{'default_loan_id': id}"
+                            invisible="state != 'active'"
+                            groups="library_rental.group_library_librarian"/>
                 </header>
                 <sheet>
                     <widget name="web_ribbon" title="Overdue"

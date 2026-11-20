@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_member_loan_history">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="member">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <t t-call="library_rental.report_member_loan_history_document">
+                            <t t-set="member" t-value="member"/>
+                        </t>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <template id="report_member_loan_history_document">
+        <h2>Історія видач читача</h2>
+        <div>
+            <strong>Читач:</strong>
+            <span t-esc="member.name"/>
+        </div>
+        <div>
+            <strong>Номер картки:</strong>
+            <span t-esc="member.membership_number"/>
+        </div>
+
+        <table class="table table-sm mt16">
+            <thead>
+                <tr>
+                    <th>Книга</th>
+                    <th>Дата видачі</th>
+                    <th>Дата повернення</th>
+                    <th>Стан</th>
+                </tr>
+            </thead>
+            <tbody>
+                <t t-foreach="member.loan_ids" t-as="loan">
+                    <tr>
+                        <td>
+                            <span t-esc="loan.copy_id.book_id.name"/>
+                        </td>
+                        <td>
+                            <span t-esc="loan.loan_date"/>
+                        </td>
+                        <td>
+                            <span t-esc="loan.return_date or ''"/>
+                        </td>
+                        <td>
+                            <span t-esc="loan.state"/>
+                        </td>
+                    </tr>
+                </t>
+            </tbody>
+        </table>
+    </template>
+
+    <record id="action_report_member_loan_history" model="ir.actions.report">
+        <field name="name">Історія видач читача</field>
+        <field name="model">library.member</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">library_rental.report_member_loan_history</field>
+        <field name="report_file">library_rental.report_member_loan_history</field>
+        <field name="binding_model_id" ref="model_library_member"/>
+        <field name="binding_type">report</field>
+        <field name="group_ids" eval="[(4, ref('group_library_librarian'))]"/>
+    </record>
+</odoo>

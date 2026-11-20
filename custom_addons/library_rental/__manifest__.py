@@ -9,7 +9,9 @@
     "data": [
         "security/library_security.xml",
         "security/ir.model.access.csv",
+        "views/return_wizard_views.xml",
         "views/library_views.xml",
+        "report/report_member_loan_history.xml",
     ],
     "demo": [
         "demo/library_demo.xml",
