@@ -68,7 +68,6 @@
         <field name="copy_id" ref="copy_clean_code_001"/>
         <field name="member_id" ref="member_olena"/>
         <field name="loan_date" eval="DateTime.today() - relativedelta(days=28)"/>
-        <field name="due_date" eval="DateTime.today() - relativedelta(days=14)"/>
         <field name="state">active</field>
     </record>
     <record id="loan_pragmatic_active" model="library.loan">

@@ -1,0 +1,308 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * library_rental
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-23 00:00+0000\n"
+"PO-Revision-Date: 2026-10-23 00:00+0000\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#. module: library_rental
+#: model:ir.model,name:library_rental.model_library_book
+msgid "Library Book"
+msgstr "Книга бібліотеки"
+
+#. module: library_rental
+#: model:ir.model,name:library_rental.model_library_copy
+msgid "Library Copy"
+msgstr "Примірник книги"
+
+#. module: library_rental
+#: model:ir.model,name:library_rental.model_library_member
+msgid "Library Member"
+msgstr "Читач бібліотеки"
+
+#. module: library_rental
+#: model:ir.model,name:library_rental.model_library_loan
+msgid "Library Loan"
+msgstr "Видача книги"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_book__name
+msgid "Title"
+msgstr "Назва книги"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_book__author
+msgid "Author"
+msgstr "Автор"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__book_author
+msgid "Book Author"
+msgstr "Автор книги"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_book__isbn
+msgid "ISBN"
+msgstr "ISBN"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_book__publish_year
+msgid "Publication Year"
+msgstr "Рік видання"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_copy__book_id
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_book_form
+msgid "Book"
+msgstr "Книга"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_copy__inventory_number
+msgid "Inventory Number"
+msgstr "Інвентарний номер"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__copy_id
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_copy_list
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_copy_form
+msgid "Copy"
+msgstr "Примірник"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_copy__condition
+msgid "Condition"
+msgstr "Стан примірника"
+
+#. module: library_rental
+#: model:ir.model.fields.selection,name:library_rental.selection__library_copy__condition__new
+msgid "New"
+msgstr "Новий"
+
+#. module: library_rental
+#: model:ir.model.fields.selection,name:library_rental.selection__library_copy__condition__good
+msgid "Good"
+msgstr "Добрий"
+
+#. module: library_rental
+#: model:ir.model.fields.selection,name:library_rental.selection__library_copy__condition__damaged
+msgid "Damaged"
+msgstr "Пошкоджений"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_member__name
+msgid "Name"
+msgstr "Ім'я та прізвище"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_member__membership_number
+msgid "Membership Number"
+msgstr "Номер читацького квитка"
+
+#. module: library_rental
+#: model:ir.model.constraint,message:library_rental.constraint_library_member_membership_number_unique
+msgid "Membership number must be unique."
+msgstr "Номер читацького квитка має бути унікальним."
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__member_id
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_member_list
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_member_form
+msgid "Member"
+msgstr "Читач"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__loan_date
+msgid "Loan Date"
+msgstr "Дата видачі"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__due_date
+msgid "Due Date"
+msgstr "Термін повернення"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__return_date
+msgid "Return Date"
+msgstr "Дата фактичного повернення"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__fine_amount
+msgid "Fine Amount (UAH)"
+msgstr "Сума штрафу (грн)"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__is_overdue
+msgid "Is Overdue"
+msgstr "Прострочено"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__display_status
+msgid "Loan Status"
+msgstr "Статус видачі"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_loan__state
+msgid "Status"
+msgstr "Статус"
+
+#. module: library_rental
+#: model:ir.model.fields.selection,name:library_rental.selection__library_loan__display_status__active
+#: model:ir.model.fields.selection,name:library_rental.selection__library_loan__state__active
+msgid "Active"
+msgstr "Активна"
+
+#. module: library_rental
+#: model:ir.model.fields.selection,name:library_rental.selection__library_loan__display_status__overdue
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_loan_form
+msgid "Overdue"
+msgstr "Прострочена"
+
+#. module: library_rental
+#: model:ir.model.fields.selection,name:library_rental.selection__library_loan__display_status__returned
+#: model:ir.model.fields.selection,name:library_rental.selection__library_loan__state__returned
+msgid "Returned"
+msgstr "Повернена"
+
+#. module: library_rental
+#: model:ir.model.fields,field_description:library_rental.field_library_book__copy_ids
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_book_form
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_copy_list
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_copy_form
+#: model:ir.actions.act_window,name:library_rental.action_library_copy
+#: model:ir.ui.menu,name:library_rental.menu_library_copies
+msgid "Copies"
+msgstr "Примірники"
+
+#. module: library_rental
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_book_list
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_book_form
+#: model:ir.actions.act_window,name:library_rental.action_library_book
+#: model:ir.ui.menu,name:library_rental.menu_library_books
+msgid "Books"
+msgstr "Книги"
+
+#. module: library_rental
+#: model:ir.actions.act_window,name:library_rental.action_library_member
+#: model:ir.ui.menu,name:library_rental.menu_library_members
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_member_list
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_member_form
+msgid "Members"
+msgstr "Читачі"
+
+#. module: library_rental
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_loan_list
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_loan_form
+#: model:ir.actions.act_window,name:library_rental.action_library_loan
+#: model:ir.ui.menu,name:library_rental.menu_library_loans
+msgid "Loans"
+msgstr "Видачі"
+
+#. module: library_rental
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_loan_list
+#: model_terms:ir.ui.view,arch_db:library_rental.view_library_loan_form
+msgid "Loan"
+msgstr "Видача"
+
+#. module: library_rental
+#: model:ir.ui.menu,name:library_rental.menu_library_root
+msgid "Library Rental"
+msgstr "Бібліотечний прокат"
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "Loan #%(loan_id)s - %(book)s"
+msgstr "Видача №%(loan_id)s — %(book)s"
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "Unknown book"
+msgstr "Книга без назви"
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "New record"
+msgstr "Новий запис"
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "Attention!"
+msgstr "Увага!"
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "This copy is already checked out to another member."
+msgstr "Цей примірник уже видано іншому читачеві."
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "Invalid date"
+msgstr "Некоректна дата"
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid ""
+"The loan date cannot be in the future. Choose today or an earlier date."
+msgstr ""
+"Дата видачі не може бути в майбутньому. Виберіть сьогоднішню або минулу дату."
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid ""
+"The return date cannot be in the future. Choose today or an earlier date."
+msgstr ""
+"Дата фактичного повернення не може бути в майбутньому. Виберіть сьогоднішню "
+"або минулу дату."
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "A copy cannot have more than one active or overdue loan."
+msgstr "Примірник не може мати більше однієї активної або простроченої видачі."
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "A loan with a return date must have the Returned status."
+msgstr "Видача із заповненою датою повернення має статус «Повернена»."
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "The due date must be later than the loan date."
+msgstr "Термін повернення має бути пізніше за дату видачі."
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "The return date cannot be earlier than the loan date."
+msgstr "Дата фактичного повернення не може бути раніше дати видачі."
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "The status must match the loan dates and return date."
+msgstr "Статус має відповідати датам видачі та фактичного повернення."
+
+#. module: library_rental
+#. odoo-python
+#: code:addons/library_rental/models/loan.py:0
+msgid "The loan status is automatic and cannot be changed manually."
+msgstr "Статус видачі встановлюється автоматично та не може змінюватися вручну."

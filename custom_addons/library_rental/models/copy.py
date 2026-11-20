@@ -12,12 +12,12 @@ class LibraryCopy(models.Model):
         ondelete="restrict",
         string="Book",
     )
-    inventory_number = fields.Char()
+    inventory_number = fields.Char(string="Inventory Number")
     condition = fields.Selection(
         [
-            ("new", "Новий"),
-            ("good", "Добрий"),
-            ("damaged", "Пошкоджений"),
+            ("new", "New"),
+            ("good", "Good"),
+            ("damaged", "Damaged"),
         ],
         string="Condition",
         default="good",

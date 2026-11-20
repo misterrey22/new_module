@@ -110,14 +110,16 @@
         <field name="name">library.loan.list</field>
         <field name="model">library.loan</field>
         <field name="arch" type="xml">
-            <list string="Loans">
+            <list string="Loans" decoration-danger="is_overdue">
                 <field name="copy_id"/>
                 <field name="book_author"/>
                 <field name="member_id"/>
                 <field name="loan_date"/>
                 <field name="due_date"/>
                 <field name="return_date"/>
-                <field name="state"/>
+                <field name="fine_amount"/>
+                <field name="is_overdue"/>
+                <field name="display_status" string="Status"/>
             </list>
         </field>
     </record>
@@ -125,16 +127,23 @@
         <field name="name">library.loan.form</field>
         <field name="model">library.loan</field>
         <field name="arch" type="xml">
-            <form string="Loan">
+            <form string="Loan" class="o_library_rental_loan_form">
+                <header>
+                    <field name="display_status" widget="statusbar"
+                           statusbar_visible="active,overdue,returned"/>
+                </header>
                 <sheet>
+                    <widget name="web_ribbon" title="Overdue"
+                            bg_color="text-bg-danger" invisible="not is_overdue"/>
+                    <field name="is_overdue" invisible="1"/>
                     <group>
                         <field name="copy_id"/>
                         <field name="book_author"/>
                         <field name="member_id"/>
                         <field name="loan_date"/>
-                        <field name="due_date"/>
+                        <field name="due_date" readonly="1"/>
                         <field name="return_date"/>
-                        <field name="state"/>
+                        <field name="fine_amount" readonly="1"/>
                     </group>
                 </sheet>
             </form>
